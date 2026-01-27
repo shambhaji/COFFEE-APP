@@ -88,7 +88,7 @@ def main():
                 print("Invalid quantity. Adding 1.")
                 order.add_item(menu[coffee_index])
         elif choice == '6':
-            order.show_order()
+            order.show_order() 
         elif choice == '7':
             order.checkout()
         else:
