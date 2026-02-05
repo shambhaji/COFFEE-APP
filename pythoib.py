@@ -1,6 +1,6 @@
 class Coffee:
 
-    # initialize coffee with name and price
+    # coffee with name and price
     def __init__(self, name, price):
         self.name = name
         self.price = price
@@ -8,7 +8,7 @@ class Coffee:
 
 class Order:
 
-    # initialize order with empty list of coffees
+    #  order with empty list of coffees
     def __init__(self):
         self.items = []
 
@@ -17,11 +17,11 @@ class Order:
         self.items.append(coffee)
         print(f"Added {coffee.name} to your order")
 
-    # calculate total price of the order
+    #  total price of the order
     def total(self):
         return sum(coffee.price for coffee in self.items)
 
-    # show order summary
+    #  order summary
     def show_order(self):
         if not self.items:
             print("No items in order.")
@@ -34,7 +34,7 @@ class Order:
 
         print(f"Total: ₹{self.total()}\n")
 
-    # handle checkout process
+    #  checkout process
     def checkout(self):
         if not self.items:
             print("Your cart is Empty")
